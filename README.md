@@ -31,10 +31,11 @@ In the folder, there must be 2 files.
     * The 3rd line should be like 'stdprog true|false', which suggets whether
     the problem has a standard program. We suggest there always be a standard
     program.
-    
+
     * The 4th line is the id number of the problem.
 
 2.probdescribe.
+
     This file contains the description to the problem.
 
     Typically, there are 5 parts of a description file.
