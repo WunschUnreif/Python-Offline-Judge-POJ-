@@ -21,27 +21,27 @@ In the folder, there must be 2 files.
 
 1.probinfo.
 
-    * This file contains at least 4 lines.
+* This file contains at least 4 lines.
 
-    * The 1st line is the name of your problem.
+* The 1st line is the name of your problem.
 
-    * The 2nd line should be like 'datagen true|false', which suggest whether
-    the problem has a data generator.
+* The 2nd line should be like 'datagen true|false', which suggest whether
+the problem has a data generator.
 
-    * The 3rd line should be like 'stdprog true|false', which suggets whether
-    the problem has a standard program. We suggest there always be a standard
-    program.
+* The 3rd line should be like 'stdprog true|false', which suggets whether
+the problem has a standard program. We suggest there always be a standard
+program.
 
-    * The 4th line is the id number of the problem.
+* The 4th line is the id number of the problem.
 
 2.probdescribe.
 
-    This file contains the description to the problem.
+This file contains the description to the problem.
 
-    Typically, there are 5 parts of a description file.
+Typically, there are 5 parts of a description file.
 
-    They are problem introduction, input format, output format, sample input
-    and sample output.
+They are problem introduction, input format, output format, sample input
+and sample output.
 
 If you don't have a data generator, then make sure there is a file named
 'stdinput', which contains the input data.
