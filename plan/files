@@ -1,0 +1,10 @@
+---Python-Offline-Judge
+   |---|src
+   |------|-diff.py              #check user output and accepted output.
+   |------|-main.py              #run the app, show the gui.
+   |---|dist                      #the exe file.
+   |---|problems                  #store problem folders.
+   |------|-problem_set          #sets of problems.
+   |------|------|set[Number]    #a set of problems.
+   |------|------|---.setInfo    #record informations of current set.
+   |------|------|---|prob[Num]  #a problem folder.
