@@ -2,15 +2,15 @@
 
 An offline judge app for python, working on Windows.
 
-##User Guide - Part-I:
+## User Guide - Part-I:
 
-###How to Create a Problem Set
+### How to Create a Problem Set
 To create a problem set, you need to create a folder in /problems.
 The folder should start exactly with 'Set'.
 There should be a file named 'setinfo', containing one line, where records
 the name of the problem set.
 
-###How to Create a Problem
+### How to Create a Problem
 To create a problem, you need to create a folder under a problem set folder.
 The folder should start exactly with 'Prob'
 
