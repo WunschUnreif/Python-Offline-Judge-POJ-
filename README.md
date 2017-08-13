@@ -20,13 +20,18 @@ The folder should start exactly with 'Prob'
 In the folder, there must be 2 files.
 
 1.probinfo.
+
     * This file contains at least 4 lines.
+
     * The 1st line is the name of your problem.
+
     * The 2nd line should be like 'datagen true|false', which suggest whether
     the problem has a data generator.
+
     * The 3rd line should be like 'stdprog true|false', which suggets whether
     the problem has a standard program. We suggest there always be a standard
     program.
+    
     * The 4th line is the id number of the problem.
 
 2.probdescribe.
