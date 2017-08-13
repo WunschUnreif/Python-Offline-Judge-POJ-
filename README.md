@@ -2,6 +2,10 @@
 
 An offline judge app for python, working on Windows.
 
+## Version 0.1b released at 14/8/2017, 1:14(UTC+8)
+
+The entrance of the program is /src/POfJ_GUI.py
+
 ## User Guide - Part-I:
 
 ### How to Create a Problem Set
