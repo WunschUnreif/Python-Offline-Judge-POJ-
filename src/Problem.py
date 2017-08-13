@@ -35,9 +35,8 @@ class Problem:
         describe.close()
 
     def genData(self):
-        if self.hasDatagen == False:
-            return
-        os.system("python %sdatagen.py > %sstdinput" % (self.probPath, self.probPath))
+        if self.hasDatagen == True:
+            os.system("python %sdatagen.py > %sstdinput" % (self.probPath, self.probPath))
         os.system("python %sstdprog.py < %sstdinput > %sstdoutput" % (self.probPath, self.probPath, self.probPath))
 
     def testUserCode(self, userCodePath):

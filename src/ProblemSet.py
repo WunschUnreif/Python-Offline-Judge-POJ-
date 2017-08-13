@@ -35,6 +35,7 @@ def getProblemSets():
         if os.path.isdir(os.path.join("../problems", name)) and name[0:3] == 'Set':
             problemSets.append(ProblemSet(os.path.join("../problems", name) + '\\'))
 
+getProblemSets()
 
 if __name__ == '__main__':
     getProblemSets()

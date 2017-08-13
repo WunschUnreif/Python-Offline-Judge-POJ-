@@ -1,5 +1,5 @@
 #This module provide a function to check whether if two files are the same.
-#The function will ignore spaces at the end of file.
+#The function will ignore spaces at the end of line.
 #And also the returns at the end of file.
 
 #define constants.
