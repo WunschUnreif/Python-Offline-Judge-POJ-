@@ -35,9 +35,10 @@ class Problem:
         describe.close()
 
     def genData(self):
-        if self.hasDatagen == True:
+        if self.hasDatagen:
             os.system("python %sdatagen.py > %sstdinput" % (self.probPath, self.probPath))
-        os.system("python %sstdprog.py < %sstdinput > %sstdoutput" % (self.probPath, self.probPath, self.probPath))
+        if self.hasStdprog:
+            os.system("python %sstdprog.py < %sstdinput > %sstdoutput" % (self.probPath, self.probPath, self.probPath))
 
     def testUserCode(self, userCodePath):
         self.genData()
@@ -46,11 +47,11 @@ class Problem:
         return ret
 
 
-if __name__ == '__main__':
-    problem = Problem("../problems/Set01/Prob01/")
-    print(problem.probName)
-    print(problem.hasDatagen)
-    print(problem.hasStdprog)
-    print(problem.probID)
-    print(problem.probDescribe)
-    print(problem.testUserCode("../problems/Set01/Prob01/stdprog.py"))
+# if __name__ == '__main__':
+#     problem = Problem("../problems/Set01/Prob01/")
+#     print(problem.probName)
+#     print(problem.hasDatagen)
+#     print(problem.hasStdprog)
+#     print(problem.probID)
+#     print(problem.probDescribe)
+#     print(problem.testUserCode("../problems/Set01/Prob01/stdprog.py"))

@@ -102,6 +102,6 @@ def diffLines(userLines, stdLines):
     return ACCEPTED
 
 
-#test program.
-if __name__ == '__main__':
-    print(diff("a.txt", "b.txt"))
+# #test program.
+# if __name__ == '__main__':
+#     print(diff("a.txt", "b.txt"))

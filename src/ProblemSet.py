@@ -37,10 +37,10 @@ def getProblemSets():
 
 getProblemSets()
 
-if __name__ == '__main__':
-    getProblemSets()
-    for ps in problemSets:
-        print(ps.setName)
-        for p in ps.problems:
-            print("|---%s\n" % p.probName)
-            print(p.probDescribe)
+# if __name__ == '__main__':
+#     getProblemSets()
+#     for ps in problemSets:
+#         print(ps.setName)
+#         for p in ps.problems:
+#             print("|---%s\n" % p.probName)
+#             print(p.probDescribe)
