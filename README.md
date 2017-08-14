@@ -4,7 +4,10 @@ An offline judge app for python, working on Windows.
 
 ## Version 0.1b released at 14/8/2017, 1:14(UTC+8)
 
-The entrance of the program is /src/POfJ_GUI.py
+To use this program, you need to clone the whole project and run the exe
+file in the folder /distr
+
+A faster entrance of the program is /src/POfJ_GUI.py
 
 ## User Guide - Part-I:
 
