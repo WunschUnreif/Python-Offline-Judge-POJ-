@@ -10,10 +10,10 @@ class POJ_App:
         self.probSet = ps.problemSets
         self.root = tk.Tk()
         self.root.title("Python Offline Judge(POJ)")
-        self.root.geometry('655x480')
+        #self.root.geometry('655x480')
         self.mainframe = ttk.Frame(self.root).grid(column=0, row=0, sticky='news')
-        self.notebook = ttk.Notebook(self.mainframe, width=650, height=470)
-        self.notebook.grid(column=0, row=1, sticky='news')
+        self.notebook = ttk.Notebook(self.mainframe)
+        self.notebook.grid(column=0, row=0, sticky='news')
         self.drawViewChooseProblem()
         self.drawViewBrowseProblem()
         self.drawViewJudge()
@@ -113,7 +113,7 @@ class POJ_App:
         if self.problem is None:
             tk.messagebox.showerror("我好像不太明白。。。", "你好像还没有选择问题\n先去选一道题吧^_^")
             return
-        path = askopenfilename(title='选择Python文件', filetypes=(("Python Source Code", "*.py"),))
+        path = askopenfilename(title='选择Python文件', initialdir="../../", filetypes=(("Python Source Code", "*.py"),))
         self.programPath = path
         if path:
             f = open(path, encoding='utf-8')
@@ -141,7 +141,7 @@ class POJ_App:
         self.frameBrowseProblem = ttk.Frame(self.notebook)
         self.frameBrowseProblem.grid(column=0, row=0, sticky='news')
 
-        self.probView = tk.Text(self.frameBrowseProblem, width=56, height=18, font='"Courier New" -18', state=tk.DISABLED)
+        self.probView = tk.Text(self.frameBrowseProblem, width=77, height=22, font=' -20', state=tk.DISABLED)
         self.probView.grid(column=0, row=0, columnspan=2, sticky='news', pady=20)
 
         btnEnterJudge = ttk.Button(self.frameBrowseProblem, text='进入评测界面', style='A.TButton', command=self.enterJudge)
